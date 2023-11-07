@@ -40,7 +40,7 @@ workflows:
     jobs:
       - maven/test:
           command: '-X compile test'
-          executor: java17
+          executor: java11
   deploy:
     jobs:
       - publishLatestToHub
